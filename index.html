@@ -48,9 +48,18 @@
     }
 
     .logo {
-      font-size: 25px;
-      font-weight: bold;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
     }
+
+    .logo img {
+      width: 200px;
+      height: auto;
+      display: block;
+      object-fit: contain;
+    }
+
 
     .logo span {
       color: var(--orange);
@@ -267,9 +276,10 @@
 <body>
 
   <header>
-    <a class="logo" href="#home" style="color: white;">
-      Dube <span>Digital.</span>
-    </a>
+   <a class="logo" href="#home">
+  <img src="images/dube-digital-logo.png" alt="Dube Digital - Helping Small Businesses Go Digital">
+</a>
+
 
     <nav aria-label="Main navigation">
       <a href="#home">Home</a>
@@ -354,6 +364,11 @@
 
       <div class="grid">
         <article class="project-card">
+          <img
+            src="images/dubemove.png"
+            alt="DubeMove Transport website homepage"
+            style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 18px;"
+          >
           <div class="project-label">Transport Website</div>
           <h3>DubeMove Transport</h3>
           <p>
@@ -369,8 +384,14 @@
         </article>
 
         <article class="project-card">
+        <img
+            src="images/nwabisa.png"
+            alt="Nwabisa Projects painting business website homepage"
+            style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 18px;"
+        >
           <div class="project-label">Painting Business</div>
-          <h3>Nwabisa Projects</h3>
+          <h3>Nwabisa Projects</h3> 
+ 
           <p>
             A painting-business website project showcasing
             services, completed work and ways to contact
